@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp2.Views.CustomViewCell"
+          Height="135">
+    <Grid Padding="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />
+       </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.6*"/>
+        </Grid.RowDefinitions>
+        <Image 
+            x:Name="ImageAvatar"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="1"
+            Source="avatar.png"
+            HeightRequest="50"
+            WidthRequest="50" />
+        <Label Grid.Column="1"
+            x:Name="AnimationLabel"
+            FontAttributes="Bold" 
+            FontSize="20"/>
+        <Label Grid.Column="1"
+            Grid.Row="1"
+            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Quisque sed posuere tortor."/>
+    </Grid>
+</ViewCell>
